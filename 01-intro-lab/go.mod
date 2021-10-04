@@ -1,4 +1,4 @@
-module GoIntro
+module github.com/Nikolay-Ishev/Proxiad-GoAcademy/tree/master/01-intro-lab
 
 go 1.17
 
