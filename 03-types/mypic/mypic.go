@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package mypic // import "github.com/iproduct/coursego/03-types-lab/mypic"
+package mypic // import "github.com/Nikolay-Ishev/Proxiad-GoAcademy/03-types/mypic"
 
 import (
 	"image"

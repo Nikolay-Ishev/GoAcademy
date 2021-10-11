@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/Nikolay-Ishev/Proxiad-GoAcademy/03-types-lab/mypic"
+	"github.com/Nikolay-Ishev/Proxiad-GoAcademy/mypic"
 	"log"
 	"os"
 	"path"
@@ -16,12 +16,19 @@ func Pic(dx, dy int) [][]uint8 {
 	for i := range(result) {
 		result[i] = make([]uint8, dx)
 		for ci := range(result[i]) {
-			result[i][ci] = uint8(i*ci)
+			result[i][ci] = uint8((i+ci)/2)
 		}
 	}
-
-	// ...
 	return result
+}
+
+func findUniqueValue(arr []int32) map[int32]int32{
+	//Create a   dictionary of values for each element
+	dict:= make(map[int32]int32)
+	for _ , num :=  range arr {
+		dict[num] = dict[num]+1
+	}
+	return dict
 }
 
 func main() {
