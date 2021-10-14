@@ -21,7 +21,7 @@ type Category string
 
 // Book struct models a book entity
 type Book struct {
-	ID                  string
+	ID                	string
 	SelfLink            url.URL
 	Title               string
 	Subtitle            string
