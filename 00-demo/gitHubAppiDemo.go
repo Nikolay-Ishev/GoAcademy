@@ -178,11 +178,13 @@ func formatPairList(p PairList) string {
 
 func main() {
 	fmt.Println("Please enter the file name below:")
-	var usernames []string
-	usernames = readFile()
-	for i:=0;i<len(usernames);i++ {
+	//var usernames []string
+	usernames := "Nikolay-Ishev"
+	//usernames = readFile()
+	//for i:=0;i<len(usernames);i++ {
 		//create files with the information returned from the requests
-		userInfo, userLang := githubInfo(usernames[i])
+		//userInfo, userLang := githubInfo(usernames[i])
+		userInfo, userLang := githubInfo(usernames)
 
 		percLang := percentMap(userLang)
 
@@ -196,6 +198,6 @@ func main() {
 		}
 
 		fmt.Println(string(userData))
-	}
 }
+
 
