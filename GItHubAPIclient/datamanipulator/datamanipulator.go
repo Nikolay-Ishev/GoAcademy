@@ -7,8 +7,6 @@ import (
 	"strings"
 )
 
-
-
 // A data structure to hold a key/value pair.
 type Pair struct {
 	Key string
